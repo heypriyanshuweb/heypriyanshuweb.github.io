@@ -6,96 +6,364 @@
   <meta name="theme-color" content="#080b16">
   <meta name="description" content="Priyanshu Kumar — web developer creating modern, responsive and interactive websites.">
   <title>Priyanshu Kumar — Creative Web Developer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
-  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
-  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <div class="scroll-progress"><span id="scrollProgress"></span></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="noise-overlay"></div>
 
   <header class="site-header" id="top">
     <nav class="nav-shell" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="PriyanshuWeb home"><span class="brand-mark">P<span>.</span></span><span>Priyanshu<span class="brand-muted">Web</span></span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <a class="brand" href="#home">
+        <span class="brand-mark">P<span>.</span></span>
+        <span>Priyanshu<span class="brand-muted">Web</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
       <div class="nav-links" id="navLinks">
-        <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#skills">Skills</a><a class="nav-link" href="#projects">Projects</a><a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
       </div>
     </nav>
   </header>
 
   <main>
+    <!-- HERO -->
     <section id="home" class="hero section-wrap">
       <div class="hero-copy reveal">
-        <div class="availability"><span class="status-dot"></span> OPEN TO CREATIVE PROJECTS</div>
+        <div class="availability">
+          <span class="status-dot"></span>
+          OPEN TO CREATIVE PROJECTS
+        </div>
+
         <p class="eyebrow">HELLO WORLD, I'M</p>
         <h1>Priyanshu<br><span class="gradient-text">Kumar<span class="hero-period">.</span></span></h1>
-        <div class="role-line"><span class="role-prefix">I build</span> <span id="typedRole">web experiences</span><span class="typing-cursor">|</span></div>
-        <p class="hero-description">I turn ideas into clean, modern and interactive websites that look sharp on every screen.</p>
-        <div class="hero-actions"><a class="button button-primary magnetic" href="#projects">Explore my work <span>↗</span></a><a class="button button-ghost" href="#contact"><span class="play-icon">↘</span> Let's connect</a></div>
-        <div class="hero-meta"><div><strong>03<span>+</span></strong><small>Live web projects</small></div><i></i><div><strong>100<span>%</span></strong><small>Learning mindset</small></div><i></i><div><strong>24<span>/7</span></strong><small>Ideas in progress</small></div></div>
+
+        <div class="role-line">
+          <span class="role-prefix">I build</span>
+          <span id="typedRole">web experiences</span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          I turn ideas into clean, modern and interactive websites
+          that look sharp on every screen.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-ghost" href="#contact"><span class="play-icon">↘</span> Let's connect</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><strong>03<span>+</span></strong><small>Live web projects</small></div>
+          <i></i>
+          <div><strong>100<span>%</span></strong><small>Learning mindset</small></div>
+          <i></i>
+          <div><strong>24<span>/7</span></strong><small>Ideas in progress</small></div>
+        </div>
       </div>
 
       <div class="hero-visual reveal" data-delay="150">
-        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
         <div class="visual-halo"></div>
+
         <div class="profile-stage" id="profileStage" data-tilt>
-          <div class="stage-topline"><span>CREATIVE DEVELOPER</span><span class="stage-live"><b></b> ONLINE</span></div>
-          <div class="profile-frame"><img src="assets/profile.jpg" alt="Portrait of Priyanshu Kumar" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="profile-fallback">PK<span>.</span></div></div>
-          <div class="stage-bottom"><div><small>BASED IN</small><strong>INDIA 🇮🇳</strong></div><div class="stage-coordinate">23.99° N<br>85.36° E</div></div>
-          <div class="float-chip chip-code"><span>&lt;/&gt;</span><div><b>Clean code</b><small>Thoughtful details</small></div></div>
-          <div class="float-chip chip-design"><span>✳</span><div><b>Creative UI</b><small>Made with purpose</small></div></div>
+          <div class="stage-topline">
+            <span>CREATIVE DEVELOPER</span>
+            <span class="stage-live"><b></b> ONLINE</span>
+          </div>
+
+          <div class="profile-frame">
+            <img src="profile.jpg" alt="Portrait of Priyanshu Kumar"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="profile-fallback">PK<span>.</span></div>
+          </div>
+
+          <div class="stage-bottom">
+            <div><small>BASED IN</small><strong>INDIA 🇮🇳</strong></div>
+            <div class="stage-coordinate">WEB<br>DEVELOPER</div>
+          </div>
+
+          <div class="float-chip chip-code">
+            <span>&lt;/&gt;</span>
+            <div><b>Clean code</b><small>Thoughtful details</small></div>
+          </div>
+
+          <div class="float-chip chip-design">
+            <span>✳</span>
+            <div><b>Creative UI</b><small>Made with purpose</small></div>
+          </div>
         </div>
+
         <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
       </div>
     </section>
 
-    <div class="ticker" aria-label="Areas of interest"><div class="ticker-track"><span>WEB DEVELOPMENT</span><b>✳</b><span>INTERACTIVE DESIGN</span><b>✳</b><span>RESPONSIVE UI</span><b>✳</b><span>CREATIVE THINKING</span><b>✳</b><span>WEB DEVELOPMENT</span><b>✳</b><span>INTERACTIVE DESIGN</span><b>✳</b><span>RESPONSIVE UI</span><b>✳</b><span>CREATIVE THINKING</span><b>✳</b></div></div>
+    <!-- MOVING TEXT -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>WEB DEVELOPMENT</span><b>✳</b>
+        <span>INTERACTIVE DESIGN</span><b>✳</b>
+        <span>RESPONSIVE UI</span><b>✳</b>
+        <span>CREATIVE THINKING</span><b>✳</b>
+        <span>WEB DEVELOPMENT</span><b>✳</b>
+        <span>INTERACTIVE DESIGN</span><b>✳</b>
+        <span>RESPONSIVE UI</span><b>✳</b>
+        <span>CREATIVE THINKING</span><b>✳</b>
+      </div>
+    </div>
 
+    <!-- ABOUT -->
     <section id="about" class="section-wrap section-block">
-      <div class="section-heading reveal"><p class="eyebrow"><span>01</span> / A LITTLE ABOUT ME</p><h2>Curious mind.<br><span class="muted-heading">Creative builder.</span></h2></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span>01</span> / A LITTLE ABOUT ME</p>
+        <h2>Curious mind.<br><span class="muted-heading">Creative builder.</span></h2>
+      </div>
+
       <div class="about-grid">
-        <div class="about-copy reveal"><p class="large-copy">I'm Priyanshu, a web developer who enjoys building digital experiences with a balance of <span class="text-accent">clarity, creativity and purpose.</span></p><p>I like taking an idea from a rough thought to a working website — shaping the layout, adding motion and making sure it feels good on mobile as well as desktop.</p><a href="#contact" class="text-link">Have an idea? Let's make it real <span>↗</span></a></div>
-        <div class="about-side reveal" data-delay="100"><div class="about-orb"><span>PK</span><i>✳</i></div><div class="about-side-text"><span class="mono-label">MY APPROACH</span><h3>Useful first.<br>Memorable always.</h3><p>Good design should feel effortless. Great interactions should have a reason to exist.</p></div><div class="corner-code">DESIGN / BUILD / IMPROVE</div></div>
+        <div class="about-copy reveal">
+          <p class="large-copy">
+            I'm Priyanshu, a web developer who enjoys building digital
+            experiences with a balance of
+            <span class="text-accent">clarity, creativity and purpose.</span>
+          </p>
+          <p>
+            I like taking an idea from a rough thought to a working website —
+            shaping the layout, adding motion and making sure it feels good
+            on mobile as well as desktop.
+          </p>
+          <a href="#contact" class="text-link">Have an idea? Let's make it real <span>↗</span></a>
+        </div>
+
+        <div class="about-side reveal" data-delay="100">
+          <div class="about-orb"><span>PK</span><i>✳</i></div>
+          <div class="about-side-text">
+            <span class="mono-label">MY APPROACH</span>
+            <h3>Useful first.<br>Memorable always.</h3>
+            <p>Good design should feel effortless. Great interactions should have a reason to exist.</p>
+          </div>
+          <div class="corner-code">DESIGN / BUILD / IMPROVE</div>
+        </div>
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section-wrap section-block skills-section">
-      <div class="section-heading reveal"><p class="eyebrow"><span>02</span> / MY TOOLKIT</p><h2>Tools for turning<br><span class="muted-heading">ideas into reality.</span></h2><p class="section-subtitle">The foundations I use to build thoughtful, responsive web experiences.</p></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span>02</span> / MY TOOLKIT</p>
+        <h2>Tools for turning<br><span class="muted-heading">ideas into reality.</span></h2>
+        <p class="section-subtitle">The foundations I use to build thoughtful, responsive web experiences.</p>
+      </div>
+
       <div class="skills-grid">
-        <article class="skill-card reveal" data-tilt><div class="skill-card-top"><span class="skill-symbol">5</span><span class="skill-index">01 / STRUCTURE</span></div><h3>HTML</h3><p>Semantic, accessible structure for content that makes sense.</p><div class="skill-track"><span style="--level:92%"></span></div><small>CORE FOUNDATION</small></article>
-        <article class="skill-card reveal" data-tilt data-delay="70"><div class="skill-card-top"><span class="skill-symbol css-symbol">✳</span><span class="skill-index">02 / VISUALS</span></div><h3>CSS</h3><p>Responsive layouts, visual systems, transitions and polished UI.</p><div class="skill-track"><span style="--level:86%"></span></div><small>DESIGN & LAYOUT</small></article>
-        <article class="skill-card reveal" data-tilt data-delay="140"><div class="skill-card-top"><span class="skill-symbol js-symbol">JS</span><span class="skill-index">03 / INTERACTION</span></div><h3>JavaScript</h3><p>Interactive components and useful behavior that brings pages alive.</p><div class="skill-track"><span style="--level:72%"></span></div><small>LEARNING & BUILDING</small></article>
-        <article class="skill-card reveal" data-tilt data-delay="210"><div class="skill-card-top"><span class="skill-symbol">↗</span><span class="skill-index">04 / EXPERIENCE</span></div><h3>Responsive UI</h3><p>Interfaces designed to work comfortably across mobile and desktop.</p><div class="skill-track"><span style="--level:88%"></span></div><small>ALL SCREEN SIZES</small></article>
+        <article class="skill-card reveal" data-tilt>
+          <div class="skill-card-top"><span class="skill-symbol">5</span><span class="skill-index">01 / STRUCTURE</span></div>
+          <h3>HTML</h3>
+          <p>Semantic, accessible structure for content that makes sense.</p>
+          <div class="skill-track"><span style="--level:92%"></span></div>
+          <small>CORE FOUNDATION</small>
+        </article>
+
+        <article class="skill-card reveal" data-tilt data-delay="70">
+          <div class="skill-card-top"><span class="skill-symbol css-symbol">✳</span><span class="skill-index">02 / VISUALS</span></div>
+          <h3>CSS</h3>
+          <p>Responsive layouts, visual systems, transitions and polished UI.</p>
+          <div class="skill-track"><span style="--level:86%"></span></div>
+          <small>DESIGN & LAYOUT</small>
+        </article>
+
+        <article class="skill-card reveal" data-tilt data-delay="140">
+          <div class="skill-card-top"><span class="skill-symbol js-symbol">JS</span><span class="skill-index">03 / INTERACTION</span></div>
+          <h3>JavaScript</h3>
+          <p>Interactive components and useful behavior that brings pages alive.</p>
+          <div class="skill-track"><span style="--level:72%"></span></div>
+          <small>LEARNING & BUILDING</small>
+        </article>
+
+        <article class="skill-card reveal" data-tilt data-delay="210">
+          <div class="skill-card-top"><span class="skill-symbol">↗</span><span class="skill-index">04 / EXPERIENCE</span></div>
+          <h3>Responsive UI</h3>
+          <p>Interfaces designed to work comfortably across mobile and desktop.</p>
+          <div class="skill-track"><span style="--level:88%"></span></div>
+          <small>ALL SCREEN SIZES</small>
+        </article>
       </div>
-      <div class="tool-tags reveal"><span>Currently exploring</span><b>Git & GitHub</b><b>APIs</b><b>UI animation</b><b>Web performance</b></div>
+
+      <div class="tool-tags reveal">
+        <span>Currently exploring</span>
+        <b>Git & GitHub</b><b>APIs</b><b>UI animation</b><b>Web performance</b>
+      </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section-wrap section-block project-section">
-      <div class="section-heading section-heading-row reveal"><div><p class="eyebrow"><span>03</span> / SELECTED WORK</p><h2>Small ideas.<br><span class="muted-heading">Real websites.</span></h2></div><a class="text-link all-projects-link" href="webprojects.html">Explore all projects <span>↗</span></a></div>
-      <p class="section-subtitle reveal">A growing collection of experiments, useful tools and creative web experiences.</p>
-      <div class="projects-grid">
-        <article class="project-card project-featured reveal" data-tilt><div class="project-preview preview-wedding"><div class="preview-window"><div class="preview-bar"><i></i><i></i><i></i><span>our special day</span></div><div class="wedding-preview-content"><span>TOGETHER WITH THEIR FAMILIES</span><strong>Ved <em>&</em> Khushi</strong><small>ARE GETTING MARRIED</small><b>✦</b></div></div><span class="preview-number">01</span></div><div class="project-info"><div><span class="project-type">CELEBRATION / EXPERIENCE</span><h3>Wedding Invitation</h3></div><a href="https://ved-khushi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="Open wedding invitation website">↗</a></div><p>An online invitation with a personal touch and celebratory design.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
-        <article class="project-card reveal" data-tilt data-delay="100"><div class="project-preview preview-weather"><div class="weather-sun">☀</div><div class="weather-cloud">☁</div><div class="weather-temp">28°<small>PARTLY SUNNY</small></div><div class="weather-lines"></div><span class="preview-number">02</span></div><div class="project-info"><div><span class="project-type">UTILITY / API</span><h3>Weather Web</h3></div><a href="https://heypriyanshuweb.github.io/Wheater/" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="Open weather website">↗</a></div><p>Weather information presented in a clean, easy-to-use interface.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Weather API</span></div></article>
-        <article class="project-card reveal" data-tilt data-delay="180"><div class="project-preview preview-portfolio"><div class="mini-window"><span class="mini-label">PORTFOLIO / 2026</span><div class="mini-title">Make it<br><i>meaningful.</i></div><div class="mini-pills"><b>DESIGN</b><b>BUILD</b><b>SHIP</b></div></div><span class="preview-number">03</span></div><div class="project-info"><div><span class="project-type">PERSONAL / WEB</span><h3>More Web Projects</h3></div><a href="webprojects.html" class="project-arrow" aria-label="Explore all web projects">↗</a></div><p>Explore more experiments, personal projects and interactive pages.</p><div class="project-tags"><span>Creative UI</span><span>Responsive</span><span>Web</span></div></article>
+      <div class="section-heading section-heading-row reveal">
+        <div>
+          <p class="eyebrow"><span>03</span> / SELECTED WORK</p>
+          <h2>Small ideas.<br><span class="muted-heading">Real websites.</span></h2>
+        </div>
+        <span class="projects-count">03 PROJECTS <span>↘</span></span>
       </div>
-      <div class="project-bottom reveal"><span class="project-bottom-line"></span><p>More ideas are always in progress.</p><a href="webprojects.html">See the full collection <span>↗</span></a></div>
+
+      <p class="section-subtitle reveal">
+        A growing collection of experiments, useful tools and creative web experiences.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Wedding project -->
+        <article class="project-card project-featured reveal" data-tilt>
+          <div class="project-preview preview-wedding">
+            <div class="preview-window">
+              <div class="preview-bar"><i></i><i></i><i></i><span>our special day</span></div>
+              <div class="wedding-preview-content">
+                <span>TOGETHER WITH THEIR FAMILIES</span>
+                <strong>Ved <em>&</em> Khushi</strong>
+                <small>ARE GETTING MARRIED</small>
+                <b>✦</b>
+              </div>
+            </div>
+            <span class="preview-number">01</span>
+          </div>
+
+          <div class="project-info">
+            <div><span class="project-type">CELEBRATION / EXPERIENCE</span><h3>Wedding Invitation</h3></div>
+            <a href="https://ved-khushi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="Open wedding invitation website">↗</a>
+          </div>
+          <p>An online invitation with a personal touch and celebratory design.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+
+        <!-- Weather project -->
+        <article class="project-card reveal" data-tilt data-delay="100">
+          <div class="project-preview preview-weather">
+            <div class="weather-sun">☀</div>
+            <div class="weather-cloud">☁</div>
+            <div class="weather-temp">28°<small>PARTLY SUNNY</small></div>
+            <div class="weather-lines"></div>
+            <span class="preview-number">02</span>
+          </div>
+
+          <div class="project-info">
+            <div><span class="project-type">UTILITY / API</span><h3>WeatherNow</h3></div>
+            <a href="https://heypriyanshuweb.github.io/Wheater/" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="Open WeatherNow website">↗</a>
+          </div>
+          <p>Weather information presented in a clean, easy-to-use interface.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>Weather API</span></div>
+        </article>
+
+        <!-- Birthday project -->
+        <article class="project-card reveal" data-tilt data-delay="180">
+          <div class="project-preview preview-birthday">
+            <div class="birthday-glow"></div>
+            <div class="birthday-content">
+              <span>MADE WITH LOVE</span>
+              <strong>Happy<br><i>Birthday!</i></strong>
+              <b>✦ ✧ ✦</b>
+            </div>
+            <span class="preview-number">03</span>
+          </div>
+
+          <div class="project-info">
+            <div><span class="project-type">PERSONAL / CELEBRATION</span><h3>Birthday Love</h3></div>
+            <a href="https://heypriyanshuweb.github.io/HappyBirthdayLove/" target="_blank" rel="noopener noreferrer" class="project-arrow" aria-label="Open Birthday Love website">↗</a>
+          </div>
+          <p>A personal birthday experience designed to make a special day memorable.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>Animations</span></div>
+        </article>
+      </div>
+
+      <div class="project-bottom reveal">
+        <span class="project-bottom-line"></span>
+        <p>More ideas are always in progress.</p>
+        <a href="#contact">Have a project in mind? <span>↗</span></a>
+      </div>
     </section>
 
-    <section class="quote-band"><div class="quote-mark">“</div><p class="reveal">The best websites don't just look good.<br><span>They make things feel simple.</span></p><span class="quote-caption">A PRINCIPLE I BUILD BY</span></section>
+    <!-- QUOTE -->
+    <section class="quote-band">
+      <div class="quote-mark">“</div>
+      <p class="reveal">The best websites don't just look good.<br><span>They make things feel simple.</span></p>
+      <span class="quote-caption">A PRINCIPLE I BUILD BY</span>
+    </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section-wrap section-block contact-section">
-      <div class="section-heading reveal"><p class="eyebrow"><span>04</span> / YOUR TURN</p><h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2><p class="section-subtitle">Tell me what you're thinking. Let's turn it into something people enjoy using.</p></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span>04</span> / YOUR TURN</p>
+        <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
+        <p class="section-subtitle">Tell me what you're thinking. Let's turn it into something people enjoy using.</p>
+      </div>
+
       <div class="contact-grid">
-        <div class="contact-panel reveal"><span class="mono-label">GET IN TOUCH</span><h3>Let's start a<br>conversation.</h3><p>For website ideas, collaborations or just to say hello — my inbox is open.</p><a class="contact-method" href="mailto:priyanshukumargupta712@outlook.com"><span class="method-icon">✉</span><span><small>EMAIL ME</small><b>priyanshukumargupta712@outlook.com</b></span><span class="method-arrow">↗</span></a><a class="contact-method" href="https://wa.me/918709397011" target="_blank" rel="noopener noreferrer"><span class="method-icon">☏</span><span><small>WHATSAPP</small><b>Let's chat directly</b></span><span class="method-arrow">↗</span></a><a class="contact-method" href="https://instagram.com/hey.priyanshuweb" target="_blank" rel="noopener noreferrer"><span class="method-icon">◎</span><span><small>INSTAGRAM</small><b>@hey.priyanshuweb</b></span><span class="method-arrow">↗</span></a></div>
-        <form class="contact-form reveal" id="contactForm"><div class="form-heading"><span class="mono-label">PROJECT ENQUIRY</span><span class="form-spark">✳</span></div><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="What should I call you?" autocomplete="name" required><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required><label for="message">Tell me about your idea</label><textarea id="message" name="message" rows="4" placeholder="A website, a project, an idea..." required></textarea><button class="button button-primary form-submit" type="submit">Send via WhatsApp <span>↗</span></button><p class="form-note">Your message opens in WhatsApp. Nothing is sent automatically.</p></form>
+        <div class="contact-panel reveal">
+          <span class="mono-label">GET IN TOUCH</span>
+          <h3>Let's start a<br>conversation.</h3>
+          <p>For website ideas, collaborations or just to say hello — my inbox is open.</p>
+
+          <a class="contact-method" href="mailto:priyanshukumargupta712@outlook.com">
+            <span class="method-icon">✉</span>
+            <span><small>EMAIL ME</small><b>priyanshukumargupta712@outlook.com</b></span>
+            <span class="method-arrow">↗</span>
+          </a>
+
+          <a class="contact-method" href="https://wa.me/918709397011" target="_blank" rel="noopener noreferrer">
+            <span class="method-icon">☏</span>
+            <span><small>WHATSAPP</small><b>Let's chat directly</b></span>
+            <span class="method-arrow">↗</span>
+          </a>
+
+          <a class="contact-method" href="https://instagram.com/hey.priyanshuweb" target="_blank" rel="noopener noreferrer">
+            <span class="method-icon">◎</span>
+            <span><small>INSTAGRAM</small><b>@hey.priyanshuweb</b></span>
+            <span class="method-arrow">↗</span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-heading"><span class="mono-label">PROJECT ENQUIRY</span><span class="form-spark">✳</span></div>
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="What should I call you?" autocomplete="name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+
+          <label for="message">Tell me about your idea</label>
+          <textarea id="message" name="message" rows="4" placeholder="A website, a project, an idea..." required></textarea>
+
+          <button class="button button-primary form-submit" type="submit">Send via WhatsApp <span>↗</span></button>
+          <p class="form-note">Your message opens in WhatsApp. Nothing is sent automatically.</p>
+        </form>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">P<span>.</span></span><span>Priyanshu<span class="brand-muted">Web</span></span></a><p>Designed & built with curiosity. <span>© <span id="currentYear">2026</span> Priyanshu Kumar</span></p><a class="back-top" href="#top">BACK TO TOP ↑</a></footer>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home">
+      <span class="brand-mark">P<span>.</span></span>
+      <span>Priyanshu<span class="brand-muted">Web</span></span>
+    </a>
+    <p>Designed & built with curiosity. <span>© <span id="currentYear">2026</span> Priyanshu Kumar</span></p>
+    <a class="back-top" href="#top">BACK TO TOP ↑</a>
+  </footer>
+
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
   <script src="script.js"></script>
 </body>
 </html>
