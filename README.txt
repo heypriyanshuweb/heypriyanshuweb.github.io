@@ -1,21 +1,23 @@
 PRIYANSHUWEB PORTFOLIO UPGRADE
 
-Included files: index.html, style.css, script.js, webprojects.html, portfolio.html, business.html.
-Built with vanilla HTML, CSS and JavaScript. No resume section is included.
+Files included:
+- index.html       Main portfolio homepage
+- style.css        Shared styling for all pages
+- script.js        3D tilt, typing text, scroll reveal, navigation and WhatsApp form
+- webprojects.html Full projects gallery
+- portfolio.html   Portfolio project detail page
+- business.html    Business project detail page
 
-How to use:
-1. Extract this ZIP.
-2. Keep all HTML files, style.css and script.js in the same folder.
-3. Open index.html locally or upload the files to your hosting repository.
+HOW TO USE:
+1. Make a backup of your existing files first.
+2. Copy these files into your current website folder and replace files with the same names.
+3. Keep your existing assets/profile.jpg image in the assets folder. The homepage expects this exact path.
+4. Open index.html in your browser to test, then upload the files to your GitHub Pages repository.
 
-Live projects:
-WeatherNow: https://heypriyanshuweb.github.io/Wheater/
-Wedding Invitation: https://ved-khushi.vercel.app/
-Birthday Love: https://heypriyanshuweb.github.io/HappyBirthdayLove/
-
-Contact:
-Email: priyanshukumargupta712@outlook.com
-WhatsApp: https://wa.me/918709397011
-Instagram: https://instagram.com/hey.priyanshuweb
-
-Note: The old assets/profile.jpg file was not included in the uploaded files. This design uses a CSS 3D hero instead, so no profile image is required.
+NOTES:
+- The website uses vanilla HTML, CSS and JavaScript.
+- Google Fonts are loaded online; system fonts will be used if offline.
+- The contact form opens WhatsApp with a prepared message; it does not send automatically.
+- Current WhatsApp link is +91 8709397011, matching the provided homepage.
+- Project links included: ved-khushi.vercel.app, Weather Web, Ganpati Bappa, Happy Girlfriend Day and Birthday Love.
+- Skill percentages are decorative progress visuals, not measured proficiency scores.
